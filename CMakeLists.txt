@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 2.8)
 include(${CMAKE_CURRENT_SOURCE_DIR}/../conanbuildinfo.cmake)
 CONAN_BASIC_SETUP()
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 macro(use_cxx11)
   if(CMAKE_VERSION VERSION_LESS "3.1")
